@@ -6,39 +6,61 @@
   <title>Microplásticos</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background: #f4f4f4;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
     }
-    h1 {
-      color: #2b2b2b;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    button {
-      background: #4b4b85;
+
+    header {
+      background-color: #2a3d66;
       color: white;
-      padding: 10px 15px;
-      border: none;
-      cursor: pointer;
-      border-radius: 4px;
+      padding: 20px;
+      text-align: center;
     }
-  </style>
-</head>
-<body>
-  <h1>Microplásticos</h1>
-  <div class="section">
-    <h2>Sobre o Aplicativo</h2>
-    <p>Este aplicativo tem como objetivo conscientizar sobre os microplásticos e suas consequências ambientais.</p>
-  </div>
-  <div class="section">
-    <h2>Finalidade</h2>
-    <p>Informar sobre a degradação dos plásticos, ciclo dos microplásticos e suas implicações na cadeia alimentar.</p>
-  </div>
-  <div class="section">
-    <h2>Download de Material</h2>
-    <button onclick="window.open('https://seulink.com/download.pdf')">Baixar PDF</button>
-  </div>
-</body>
-</html>
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #dde6f2;
+      padding: 10px;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      color: #2a3d66;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    img.responsive {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: #2a3d66;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
